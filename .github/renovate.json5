@@ -85,7 +85,7 @@
        ],
        "matchDepNames": [
          "docker.io/library/golang",
-         "gcr.io/distroless/static-debian11",
+         "gcr.io/distroless/static-debian12",
        ],
        "matchUpdateTypes": [
         'major',
