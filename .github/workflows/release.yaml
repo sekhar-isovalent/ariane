@@ -45,14 +45,14 @@ jobs:
           EOF
 
       - name: Log in to GCP
-        uses: google-github-actions/auth@0920706a19e9d22c3d0da43d1db5939c6ad837a8
+        uses: google-github-actions/auth@fc2174804b84f912b1f6d334e9463f484f1c552d
         with:
           project_id: ${{ vars.GCP_PROJECT_ID }}
           workload_identity_provider: ${{ vars.GCP_WORKLOAD_IDENTITY_PROVIDER }}
           service_account: ${{ vars.GCP_SERVICE_ACCOUNT }}
 
       - name: Setup Docker
-        uses: docker/setup-docker-action@b60f85385d03ac8acfca6d9996982511d8620a19 # v4.3.0
+        uses: docker/setup-docker-action@3fb92d6d9c634363128c8cce4bc3b2826526370a # v4.4.0
 
       - name: Docker Login
         run: gcloud auth configure-docker
