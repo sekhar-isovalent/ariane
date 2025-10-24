@@ -67,6 +67,9 @@
         "pin",
         "pinDigest"
       ],
+      matchDepNames: [
+        "github.com/palantir/go-githubapp",
+      ],
       matchBaseBranches: [
         "main"
       ],
